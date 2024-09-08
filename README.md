@@ -1,6 +1,7 @@
 Here are list of plugins for Uncode users:
 
 1. Custom Search Highlight.
+https://github.com/childtheme/uncode/tree/custom-search-highlight
 
 Highlights any searched text in the search results (title, content, excerpt).
 
