@@ -4,6 +4,7 @@ Plugin Name: Rating Banner as Menu Item
 Description: Adds a customizable rating banner as a menu item in Appearance > Menus.
 Version: 1.0
 Author: Dmitrii Chempalov
+Author URI: https://github.com/childtheme/uncode
 */
 
 // Add settings page for the banner
