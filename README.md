@@ -7,9 +7,9 @@ https://github.com/childtheme/uncode/tree/custom-search-highlight
    To edit highlight color, please navigater to the Settings > Search Highlight.
 
 2. Wireframe Import Blocker for Wireframe plugin.</br>
-https://github.com/childtheme/uncode/tree/custom-demo-import-blocker/custom-demo-import-blocker
+https://github.com/childtheme/uncode/tree/custom-demo-import-blocker
 
-This plugin allow users to block specific elements from Wireframe demo imports in the Uncode theme.
+   This plugin allow users to block specific elements from Wireframe demo imports in the Uncode theme.
 
 4. Uncode Double Tap Fix</br>
 A simple plugin to add the uncode_index_no_double_tap filter.
