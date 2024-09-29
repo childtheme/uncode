@@ -7,7 +7,7 @@ You can manage the text, stars image, and Trustpilot link via Settings > Rating 
 ![Alt text](https://github.com/childtheme/uncode/blob/custom-menu-rating-banner/screenshot3.jpg)
 ![Alt text](https://github.com/childtheme/uncode/blob/custom-menu-rating-banner/screenshot4.jpg)
 
-![Alt text](https://github.com/childtheme/uncode/blob/custom-menu-rating-banner/screenshot1.png)
+![Alt text](https://github.com/childtheme/uncode/blob/custom-menu-rating-banner/settings.jpg)
 
 
 
