@@ -3,7 +3,7 @@
  * Plugin Name: Uncode Theme - Fix Unserialize Deprecation
  * Description: Fixes the PHP 8.1 deprecated warning for passing null to unserialize() in the Uncode theme.
  * Version: 1.0
- * Author: Your Name
+ * Author: Dmitrii Chempalov
  */
 
 // Hook into 'after_setup_theme' to ensure this runs after the theme is loaded
