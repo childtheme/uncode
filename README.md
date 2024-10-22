@@ -1,25 +1,48 @@
-Here are list of plugins for Uncode users.
+Plugin: Replace Published Date with Last Modified Date
+Description:
+The Replace Published Date with Last Modified Date plugin allows you to replace the default post published date with the last modified date on your WordPress website. This is particularly useful if you want to display the most recent update time for your posts rather than their original publication date.
 
-1. Custom Search Highlight.</br>
-Description: Highlights any searched text in the search results (title, content, excerpt). <br>
-To edit highlight color, please navigater to the Settings > Search Highlight.<br>
-https://github.com/childtheme/uncode/tree/custom-search-highlight
+The plugin hooks into WordPress' date display functionality and replaces the output of the published date with the modified date on both posts and pages. No need to modify theme files directly, and the plugin works seamlessly with most WordPress themes.
 
-2. Wireframe Import Blocker for Wireframe plugin.</br>
-Description: This plugin allow users to block specific elements from Wireframe demo imports in the Uncode theme.<br>
-https://github.com/childtheme/uncode/tree/custom-demo-import-blocker
+Key Features:
+Replaces the published date with the last modified date.
+Works on posts and pages (easily customizable for other post types).
+No direct theme modifications needed.
+Lightweight and easy to install.
 
-4. Uncode Double Tap Fix</br>
-A simple plugin to add the uncode_index_no_double_tap filter.
+Install the Plugin:
 
-5. Rating Banner as Menu Item</br>
-Description: The custom banner is added dynamically and will show up in the menu. <br>
-You can manage the text, stars image, and Trustpilot link via Settings > Rating Banner.<br>
-https://github.com/childtheme/uncode/tree/custom-menu-rating-banner
+Go to your WordPress dashboard.
+Navigate to Plugins > Add New.
+Click the Upload Plugin button at the top.
+Select the last-modified-date-replace-updated.zip file you downloaded and click Install Now.
+After installation, click Activate Plugin.
+Usage:
 
-6.    Plugin Name: Uncode Theme - Fix Unserialize Deprecation
-Description: Fixes the PHP 8.1 deprecated warning for passing null to unserialize() in the Uncode theme.<br>
-https://github.com/childtheme/uncode/tree/uncode-fix-unserialize
+Once activated, the plugin will automatically replace the published date with the last modified date across your site.
+If a post or page has been modified, it will display the modified date instead of the original publication date.
+No further configuration is required!
+Customization:
+Custom Post Types: By default, the plugin applies to regular posts and pages. If you want to modify it for custom post types (such as products or portfolios), edit the code in the plugin file:
+
+Locate the line:
+
+if ( 'post' === get_post_type($post) ) {
+Add your custom post type (e.g., 'custom_post_type'):
+
+if ( in_array( get_post_type($post), array('post', 'page', 'custom_post_type') ) ) {
+Date Format: If you want to change how the date appears, you can modify the date format by editing this line:
+
+
+$modified_date = get_the_modified_date($d, $post);
+You can pass custom date formats such as F j, Y or Y-m-d as the first parameter for get_the_modified_date().
+
+Deactivation:
+If you no longer wish to use the plugin, you can deactivate it from the Plugins section in the WordPress dashboard.
+Additional Notes:
+Author: Dmitrii Chempalov
+Plugin URI: https://github.com/childtheme/uncode
+Feel free to contact the author if you need any specific customization or encounter issues while using the plugin.
 
 
    
