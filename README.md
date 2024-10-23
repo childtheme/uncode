@@ -23,4 +23,7 @@ https://github.com/childtheme/uncode/tree/uncode-fix-unserialize
 
 6. Plugin: Replace Published Date with Last Modified Date Description: The Replace Published Date with Last Modified Date plugin allows you to replace the default post published date with the last modified date on your WordPress website. This is particularly useful if you want to display the most recent update time for your posts rather than their original publication date.
 https://github.com/childtheme/uncode/tree/Last-Modified-Date
+
+8.Plugin Name: Grid Cat Filter Links
+Description: Allows the user to define grid-cat values and their corresponding URLs.
    
