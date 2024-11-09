@@ -27,8 +27,8 @@ https://github.com/childtheme/uncode/tree/Last-Modified-Date
 7. Uncode Double Tap Fix<br>
 Description: A simple plugin to add the uncode_index_no_double_tap filter.
 
-8.Plugin Name: Grid Cat Filter Links<br>
-Description: Allows the user to define grid-cat values and their corresponding URLs.<br>
+8. Plugin Name: Grid Cat Filter Links <br>
+Description: Allows the user to define grid-cat values and their corresponding URLs. <br>
 https://github.com/childtheme/uncode/tree/grid-cat-filter-links
 
 9. Plugin Name: Uncode Theme - Fix Unserialize Deprecation<br>
