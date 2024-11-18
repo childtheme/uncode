@@ -1,49 +1,70 @@
-> ### ⚠️ Disclaimer
-> **Please note** that I am **not an official developer of the Uncode theme**.  
-> These plugins are provided "**as is**."  
+# Plugins for Uncode Users 🎉  
+
+Welcome! Below is a curated list of plugins designed to enhance your experience with the **Uncode WordPress Theme**.  
+
+---
+
+## ⚠️ Disclaimer  
+
+> **Please Note**: I am **not an official developer of the Uncode theme**. These plugins are provided "**as is**."  
 > 
-> #### Important Notice
+> ### Important Notice  
 > - **Backup Requirement**: Before using any of these plugins, it is essential to create a full backup of your site.  
-> - **Usage Agreement**: If you do not agree with this, please refrain from using these plugins on your site.
+> - **Usage Agreement**: If you do not agree with this disclaimer, please refrain from using these plugins on your site.  
 >
-> **Liability**: I am not responsible for any site issues, plugin conflicts, or malfunctions that may occur, and I do not provide support for these plugins.
+> **Liability**: I am not responsible for any site issues, plugin conflicts, or malfunctions that may occur, and I do not provide support for these plugins.  
 
+---
 
-Here are list of plugins for Uncode users.
+## Available Plugins  
 
-1. Custom Search Highlight.</br>
-Description: Highlights any searched text in the search results (title, content, excerpt). <br>
-To edit highlight color, please navigater to the Settings > Search Highlight.<br>
-https://github.com/childtheme/uncode/tree/custom-search-highlight
+### 1. **Custom Search Highlight**  
+- **Description**: Highlights searched text in the search results (title, content, excerpt).  
+- **Settings**: To edit highlight color, navigate to `Settings > Search Highlight`.  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-search-highlight)  
 
-2. Wireframe Import Blocker for Wireframe plugin.</br>
-Description: This plugin allow users to block specific elements from Wireframe demo imports in the Uncode theme.<br>
-https://github.com/childtheme/uncode/tree/custom-demo-import-blocker
+---
 
-3. Uncode Double Tap Fix</br>
-A simple plugin to add the uncode_index_no_double_tap filter.
+### 2. **Wireframe Import Blocker**  
+- **Description**: Block specific elements from Wireframe demo imports in the Uncode theme.  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-demo-import-blocker)  
 
-4. Rating Banner as Menu Item</br>
-Description: The custom banner is added dynamically and will show up in the menu. <br>
-You can manage the text, stars image, and Trustpilot link via Settings > Rating Banner.<br>
-https://github.com/childtheme/uncode/tree/custom-menu-rating-banner
+---
 
-5.    Plugin Name: Uncode Theme - Fix Unserialize Deprecation
-Description: Fixes the PHP 8.1 deprecated warning for passing null to unserialize() in the Uncode theme.<br>
-https://github.com/childtheme/uncode/tree/uncode-fix-unserialize
+### 3. **Uncode Double Tap Fix**  
+- **Description**: Adds the `uncode_index_no_double_tap` filter.  
 
-6. Plugin: Replace Published Date with Last Modified Date Description: The Replace Published Date with Last Modified Date plugin allows you to replace the default post published date with the last modified date on your WordPress website. This is particularly useful if you want to display the most recent update time for your posts rather than their original publication date.
-https://github.com/childtheme/uncode/tree/Last-Modified-Date
+---
 
-7. Uncode Double Tap Fix<br>
-Description: A simple plugin to add the uncode_index_no_double_tap filter.
+### 4. **Rating Banner as Menu Item**  
+- **Description**: Adds a custom banner dynamically in the menu.  
+  - Manage the text, star image, and Trustpilot link via `Settings > Rating Banner`.  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-menu-rating-banner)  
 
-8. Plugin Name: Grid Cat Filter Links <br>
-Description: Allows the user to define grid-cat values and their corresponding URLs. <br>
-https://github.com/childtheme/uncode/tree/grid-cat-filter-links
+---
 
-9. Plugin Name: Uncode Theme - Fix Unserialize Deprecation<br>
-Description: Fixes the PHP 8.1 deprecated warning for passing null to unserialize() in the Uncode theme.
+### 5. **Uncode Theme - Fix Unserialize Deprecation**  
+- **Description**: Fixes the PHP 8.1 deprecated warning for passing `null` to `unserialize()` in the Uncode theme.  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/uncode-fix-unserialize)  
 
-10. Woolist Category Products Plugin Woolist Category Products is a WordPress plugin that allows WooCommerce store owners to display products from specific categories on custom pages. <br>
-https://github.com/childtheme/uncode/tree/woolist-category-products
+---
+
+### 6. **Replace Published Date with Last Modified Date**  
+- **Description**: Replaces the default post published date with the last modified date, displaying the most recent update time for your posts.  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/Last-Modified-Date)  
+
+---
+
+### 7. **Grid Cat Filter Links**  
+- **Description**: Allows users to define `grid-cat` values and their corresponding URLs.  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/grid-cat-filter-links)  
+
+---
+
+### 8. **Woolist Category Products Plugin**  
+- **Description**: Displays WooCommerce products from specific categories on custom pages.  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/woolist-category-products)  
+
+---
+
+Thank you for exploring these plugins! 😊  
