@@ -1,70 +1,44 @@
-# Plugins for Uncode Users 🎉  
+# Scroll Phone Icon Plugin
 
-Welcome! Below is a curated list of plugins designed to enhance your experience with the **Uncode WordPress Theme**.  
+A WordPress plugin that adds a floating circular button with a phone icon. The icon can be customized with a link, color, and visibility settings (mobile, desktop, or both).
 
----
+## Features
 
-## ⚠️ Disclaimer  
+- Displays a floating circle with a phone icon.
+- Fully customizable: 
+  - Add a custom link.
+  - Choose circle color and icon class.
+  - Control visibility (mobile only, desktop only, or both).
+- Responsive design.
+- Simple configuration through the WordPress admin panel.
 
-> **Please Note**: I am **not an official developer of the Uncode theme**. These plugins are provided "**as is**."  
-> 
-> ### Important Notice  
-> - **Backup Requirement**: Before using any of these plugins, it is essential to create a full backup of your site.  
-> - **Usage Agreement**: If you do not agree with this disclaimer, please refrain from using these plugins on your site.  
->
-> **Liability**: I am not responsible for any site issues, plugin conflicts, or malfunctions that may occur, and I do not provide support for these plugins.  
+## Installation
 
----
+1. Download the plugin files and compress them into a `.zip` file.
+2. Log in to your WordPress admin dashboard.
+3. Navigate to **Plugins > Add New > Upload Plugin**.
+4. Upload the `.zip` file and click **Install Now**.
+5. Activate the plugin.
 
-## Available Plugins  
+## Configuration
 
-### 1. **Custom Search Highlight**  
-- **Description**: Highlights searched text in the search results (title, content, excerpt).  
-- **Settings**: To edit highlight color, navigate to `Settings > Search Highlight`.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-search-highlight)  
+1. Go to **Settings > Scroll Phone Icon**.
+2. Set the following options:
+   - **Custom Link**: Add a URL (e.g., `tel:+123456789` for phone calls).
+   - **Circle Color**: Choose a background color for the button.
+   - **Icon Class**: Enter a Font Awesome class (default: `fa fa-phone`).
+   - **Display On**: Choose where to display the button (Mobile Only, Desktop Only, Both).
+3. Save your settings.
 
----
+## Usage
 
-### 2. **Wireframe Import Blocker**  
-- **Description**: Block specific elements from Wireframe demo imports in the Uncode theme.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-demo-import-blocker)  
+- The button will automatically appear based on the configuration.
+- It can be clicked to open the specified link.
 
----
+## Contribution
 
-### 3. **Uncode Double Tap Fix**  
-- **Description**: Adds the `uncode_index_no_double_tap` filter.  
+Feel free to fork and contribute! For any issues or feature requests, open an issue on GitHub.
 
----
+## License
 
-### 4. **Rating Banner as Menu Item**  
-- **Description**: Adds a custom banner dynamically in the menu.  
-  - Manage the text, star image, and Trustpilot link via `Settings > Rating Banner`.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-menu-rating-banner)  
-
----
-
-### 5. **Uncode Theme - Fix Unserialize Deprecation**  
-- **Description**: Fixes the PHP 8.1 deprecated warning for passing `null` to `unserialize()` in the Uncode theme.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/uncode-fix-unserialize)  
-
----
-
-### 6. **Replace Published Date with Last Modified Date**  
-- **Description**: Replaces the default post published date with the last modified date, displaying the most recent update time for your posts.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/Last-Modified-Date)  
-
----
-
-### 7. **Grid Cat Filter Links**  
-- **Description**: Allows users to define `grid-cat` values and their corresponding URLs.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/grid-cat-filter-links)  
-
----
-
-### 8. **Woolist Category Products Plugin**  
-- **Description**: Displays WooCommerce products from specific categories on custom pages.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/woolist-category-products)  
-
----
-
-Thank you for exploring these plugins! 😊  
+This plugin is open-source and available under the MIT License.
