@@ -65,7 +65,15 @@ Welcome! Below is a curated list of plugins designed to enhance your experience 
 - **Description**: Displays WooCommerce products from specific categories on custom pages.  
 🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/woolist-category-products)  
 
-### 9. **Scroll Phone Icon Plugin**  
+---
+
+### 9. **WooCommerce Gift Option**  
+- **Description**: Adds a 'Is this order a gift?' checkbox to the WooCommerce checkout page..  
+🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/WooCommerce-Gift-Option)  
+
+---
+
+### 10. **Scroll Phone Icon Plugin**  
 - **Description**: A WordPress plugin that adds a floating circular button with a phone icon. The icon can be customized with a link, color, and visibility settings (mobile, desktop, or both).  
 🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/scroll-phone-icon#scroll-phone-icon-plugin)  
 
