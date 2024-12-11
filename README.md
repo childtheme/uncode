@@ -12,6 +12,8 @@ A WordPress plugin that adds a floating circular button with a phone icon. The i
 - Responsive design.
 - Simple configuration through the WordPress admin panel.
 
+<img src="https://github.com/childtheme/uncode/blob/scroll-phone-icon/image.jpg" alt="Settings" style="width: 300px; height: auto;">
+
 ## Installation
 
 1. Download the plugin files and compress them into a `.zip` file.
