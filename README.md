@@ -16,67 +16,83 @@ Welcome! Below is a curated list of plugins designed to enhance your experience 
 
 ---
 
-## Available Plugins  
+# Car Park Data Display Plugin
 
-### 1. **Custom Search Highlight**  
-- **Description**: Highlights searched text in the search results (title, content, excerpt).  
-- **Settings**: To edit highlight color, navigate to `Settings > Search Highlight`.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-search-highlight)  
+This plugin fetches and displays live car park data via an API using Advanced Custom Fields (ACF). It includes a settings page where you can configure the API URL and display the data on your WordPress site using a shortcode.
 
 ---
 
-### 2. **Wireframe Import Blocker**  
-- **Description**: Block specific elements from Wireframe demo imports in the Uncode theme.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-demo-import-blocker)  
+## Requirements
+
+Before installing, ensure the following plugins are active on your WordPress site:
+
+1. **Advanced Custom Fields (ACF)** or **ACF Pro**  
+   - Required to store and display car park data fetched from the API.  
+   - [Download ACF](https://wordpress.org/plugins/advanced-custom-fields/)
 
 ---
 
-### 3. **Uncode Double Tap Fix**  
-- **Description**: Adds the `uncode_index_no_double_tap` filter.  
+## Installation
+
+1. **Download the Plugin**  
+   Download the plugin file from the provided link or source.
+
+2. **Upload and Activate**  
+   - Go to your WordPress Admin Dashboard.
+   - Navigate to **Plugins > Add New**.
+   - Click **Upload Plugin**.
+   - Upload the plugin file (`car-park-data-plugin.php`) and click **Install Now**.
+   - Once installed, click **Activate**.
 
 ---
 
-### 4. **Rating Banner as Menu Item**  
-- **Description**: Adds a custom banner dynamically in the menu.  
-  - Manage the text, star image, and Trustpilot link via `Settings > Rating Banner`.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-menu-rating-banner)  
+## Configuration
+
+1. **Set Up API URL**  
+   - Go to **Settings > Car Park Data**.
+   - Enter the API URL provided by your car park operator (e.g., `https://example.com/carpark/api`).
+   - Click **Save Changes**.
+
+2. **Create an ACF Field**  
+   - Navigate to **Custom Fields > Add New** in your WordPress Dashboard.
+   - Create a new field group and name it **Car Park Data**.
+   - Add a field:
+     - **Field Label**: Available Spaces
+     - **Field Name**: `available_spaces`
+     - **Field Type**: Number
+   - Assign this field group to the specific page, post, or post type where you want the car park data to be displayed.
+   - Save the field group.
 
 ---
 
-### 5. **Uncode Theme - Fix Unserialize Deprecation**  
-- **Description**: Fixes the PHP 8.1 deprecated warning for passing `null` to `unserialize()` in the Uncode theme.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/uncode-fix-unserialize)  
+## Usage
+
+### Display Data Using Shortcode
+- Use the shortcode `[car_park_data]` in any page, post, or widget to display live car park data.
+- Example output:  
+  **Available Spaces: 35**
 
 ---
 
-### 6. **Replace Published Date with Last Modified Date**  
-- **Description**: Replaces the default post published date with the last modified date, displaying the most recent update time for your posts.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/Last-Modified-Date)  
+## Automate Updates
+
+This plugin includes functionality to periodically update the ACF field with live data from the API.
+
+### How It Works:
+- By default, the plugin fetches data on every page load.
+- To improve performance, the plugin schedules hourly updates using WP Cron.
+- WP Cron is automatically enabled upon plugin activation.
 
 ---
 
-### 7. **Grid Cat Filter Links**  
-- **Description**: Allows users to define `grid-cat` values and their corresponding URLs.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/grid-cat-filter-links)  
+## Instructions Summary (Available in Admin Settings)
+
+- Navigate to **Settings > Car Park Data** for step-by-step instructions and API configuration.
+- Use the shortcode `[car_park_data]` to display data dynamically.
 
 ---
 
-### 8. **Woolist Category Products Plugin**  
-- **Description**: Displays WooCommerce products from specific categories on custom pages.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/woolist-category-products)  
+## Additional Notes
 
----
-
-### 9. **WooCommerce Gift Option**  
-- **Description**: Adds a 'Is this order a gift?' checkbox to the WooCommerce checkout page..  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/WooCommerce-Gift-Option)  
-
----
-
-### 10. **Scroll Phone Icon Plugin**  
-- **Description**: A WordPress plugin that adds a floating circular button with a phone icon. The icon can be customized with a link, color, and visibility settings (mobile, desktop, or both).  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/scroll-phone-icon#scroll-phone-icon-plugin)  
-
----
-
-Thank you for exploring these plugins! 😊  
+- If you need further customizations (e.g., to display additional API data), extend the plugin by modifying the API fetch function.
+- This plugin was created by **Dmitry Chempalov** to simplify live data display for car park operators.
