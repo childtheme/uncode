@@ -51,7 +51,8 @@ Add the following to the CSS section of your theme:
     body:not(.disable-hover) a.special-cursor-color:hover #uncode-custom-cursor span:first-child {
         background-color: #ff0000 !important; /* Replace with your desired color */
     }
-}
+};
+
 
 Save the custom JavaScript and CSS.
 Test the functionality by hovering over the links with the specific anchor (#lien-cta1).
