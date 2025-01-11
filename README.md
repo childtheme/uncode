@@ -16,67 +16,43 @@ Welcome! Below is a curated list of plugins designed to enhance your experience 
 
 ---
 
-## Available Plugins  
+Here’s how you can integrate a native "add class" functionality to your theme for customizing cursor colors based on specific HTML anchors:
 
-### 1. **Custom Search Highlight**  
-- **Description**: Highlights searched text in the search results (title, content, excerpt).  
-- **Settings**: To edit highlight color, navigate to `Settings > Search Highlight`.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-search-highlight)  
+Steps to Add a Class Dynamically
+Locate the Theme's Custom JS or CSS Integration Area
+Most modern WordPress themes have a section for adding custom JavaScript and CSS. In your theme, navigate to:
 
----
+Theme Options > CSS/JS > JavaScript for custom JavaScript code.
+Write a JavaScript Script
+Use JavaScript to detect the specific anchor tags and add a class to them dynamically.
 
-### 2. **Wireframe Import Blocker**  
-- **Description**: Block specific elements from Wireframe demo imports in the Uncode theme.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-demo-import-blocker)  
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all anchor links with the specific class or attribute
+    const specialLinks = document.querySelectorAll('a[href*="#lien-cta1"]');
 
----
+    specialLinks.forEach((link) => {
+        // Add a class to the link
+        link.classList.add("special-cursor-color");
+    });
+});
+Customize Cursor Color Using CSS
+Once the class is added, use CSS to define the cursor color for those links.
 
-### 3. **Uncode Double Tap Fix**  
-- **Description**: Adds the `uncode_index_no_double_tap` filter.  
+Add the following to the CSS section of your theme:
 
----
 
-### 4. **Rating Banner as Menu Item**  
-- **Description**: Adds a custom banner dynamically in the menu.  
-  - Manage the text, star image, and Trustpilot link via `Settings > Rating Banner`.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/custom-menu-rating-banner)  
+@media (min-width: 960px) {
+    a.special-cursor-color:hover {
+        cursor: pointer;
+    }
+    body:not(.disable-hover) a.special-cursor-color:hover #uncode-custom-cursor span:first-child {
+        background-color: #ff0000 !important; /* Replace with your desired color */
+    }
+}
+Save and Test
 
----
-
-### 5. **Uncode Theme - Fix Unserialize Deprecation**  
-- **Description**: Fixes the PHP 8.1 deprecated warning for passing `null` to `unserialize()` in the Uncode theme.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/uncode-fix-unserialize)  
-
----
-
-### 6. **Replace Published Date with Last Modified Date**  
-- **Description**: Replaces the default post published date with the last modified date, displaying the most recent update time for your posts.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/Last-Modified-Date)  
-
----
-
-### 7. **Grid Cat Filter Links**  
-- **Description**: Allows users to define `grid-cat` values and their corresponding URLs.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/grid-cat-filter-links)  
-
----
-
-### 8. **Woolist Category Products Plugin**  
-- **Description**: Displays WooCommerce products from specific categories on custom pages.  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/woolist-category-products)  
-
----
-
-### 9. **WooCommerce Gift Option**  
-- **Description**: Adds a 'Is this order a gift?' checkbox to the WooCommerce checkout page..  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/WooCommerce-Gift-Option)  
-
----
-
-### 10. **Scroll Phone Icon Plugin**  
-- **Description**: A WordPress plugin that adds a floating circular button with a phone icon. The icon can be customized with a link, color, and visibility settings (mobile, desktop, or both).  
-🔗 [Download & Instructions](https://github.com/childtheme/uncode/tree/scroll-phone-icon#scroll-phone-icon-plugin)  
-
----
-
-Thank you for exploring these plugins! 😊  
+Save the custom JavaScript and CSS.
+Test the functionality by hovering over the links with the specific anchor (#lien-cta1).
+Explanation:
+JavaScript: Dynamically identifies anchor tags containing the specified anchor (#lien-cta1) and assigns a class to them.
+CSS: Changes the cursor color when hovering over those specific links.
