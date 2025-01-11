@@ -42,6 +42,12 @@ Customize Cursor Color Using CSS
 Once the class is added, use CSS to define the cursor color for those links.
 
 Add the following to the CSS section of your theme:
+Save the custom JavaScript and CSS.
+Test the functionality by hovering over the links with the specific anchor (#lien-cta1).
+Explanation:
+JavaScript: Dynamically identifies anchor tags containing the specified anchor (#lien-cta1) and assigns a class to them.
+CSS: Changes the cursor color when hovering over those specific links.
+
 
  ```css
 @media (min-width: 960px) {
@@ -51,11 +57,5 @@ Add the following to the CSS section of your theme:
     body:not(.disable-hover) a.special-cursor-color:hover #uncode-custom-cursor span:first-child {
         background-color: #ff0000 !important; /* Replace with your desired color */
     }
-};
+}
 
-
-Save the custom JavaScript and CSS.
-Test the functionality by hovering over the links with the specific anchor (#lien-cta1).
-Explanation:
-JavaScript: Dynamically identifies anchor tags containing the specified anchor (#lien-cta1) and assigns a class to them.
-CSS: Changes the cursor color when hovering over those specific links.
