@@ -18,29 +18,32 @@ Welcome! Below is a curated list of plugins designed to enhance your experience 
 
 Here’s how you can integrate a native "add class" functionality to your theme for customizing cursor colors based on specific HTML anchors:
 
-Steps to Add a Class Dynamically
-Locate the Theme's Custom JS or CSS Integration Area
-Most modern WordPress themes have a section for adding custom JavaScript and CSS. In your theme, navigate to:
+**How to Change the Cursor Color Depending on Links or HTML Anchors**
 
-Theme Options > CSS/JS > JavaScript for custom JavaScript code.
-Write a JavaScript Script
-Use JavaScript to detect the specific anchor tags and add a class to them dynamically.
+1. **Locate the Theme's Custom JS or CSS Integration Area**  
+   Navigate to `Theme Options > CSS/JS > JavaScript` to add custom JavaScript.
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Select all anchor links with the specific class or attribute
-    const specialLinks = document.querySelectorAll('a[href*="#lien-cta1"]');
+2. **Add JavaScript Code**  
+   Use the following script to detect specific anchors and add a class dynamically:
 
-    specialLinks.forEach((link) => {
-        // Add a class to the link
-        link.classList.add("special-cursor-color");
-    });
-});
+   ```javascript
+   document.addEventListener("DOMContentLoaded", function () {
+       // Select all anchor links with the specific class or attribute
+       const specialLinks = document.querySelectorAll('a[href*="#lien-cta1"]');
+
+       specialLinks.forEach((link) => {
+           // Add a class to the link
+           link.classList.add("special-cursor-color");
+       });
+   });
+
+
 Customize Cursor Color Using CSS
 Once the class is added, use CSS to define the cursor color for those links.
 
 Add the following to the CSS section of your theme:
 
-
+ ```css
 @media (min-width: 960px) {
     a.special-cursor-color:hover {
         cursor: pointer;
@@ -49,7 +52,6 @@ Add the following to the CSS section of your theme:
         background-color: #ff0000 !important; /* Replace with your desired color */
     }
 }
-Save and Test
 
 Save the custom JavaScript and CSS.
 Test the functionality by hovering over the links with the specific anchor (#lien-cta1).
